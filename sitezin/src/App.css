@@ -1,0 +1,78 @@
+body{
+  background-color: rgb(251, 255, 253);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo{
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+
+.FormPrinc{
+  background-color: rgb(31, 219, 179, 0.5);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+input{
+  cursor: pointer;
+ 
+}
+button{
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  background-color: white;
+  font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color:  rgba(196, 245, 234, 0.9);
+
+}
+
+.custom-radio {
+  position: relative;
+  appearance: none;
+  border: 0;
+  outline: 0;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: aquamarine;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgb(193, 243, 235);
+  transition: border-color .2s;
+}
+.custom-radio::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width .2s ease-in-out, height .2s ease-in-out;
+}
+
+.custom-radio:checked{
+  border-color: transparent;
+}
+
+.custom-radio:checked::after{
+  width: 18px;
+  height: 18px;
+}
