@@ -11,16 +11,16 @@ const Forms = ({pergunta, id, onChange}) => {
       {[...Array(10)].map((_, index) => {
         const valor = index + 1;
         return (
-          <label key={valor}>
+          <label key={valor} className='custom-radio-label' data-value={valor}>
             <input
               className='custom-radio'
               type="radio"
-              id={`radio-${id}`}
+              id={`radio-${id}-${valor}`}
               name={`nota-${id}`}
               value={valor}
               onChange={() => onChange(id, valor)} 
             />
-            {valor}
+            <span>{valor}</span>
           </label>
         );
       })}
